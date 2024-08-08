@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Para ti mi amor</title>
-    
+    <style>
+       /* CSS para estilizar el botón */
+       .redirect-button {
+            background-color: #4CAF50; /* Verde */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            align-self: center;
+            margin-top: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .redirect-button:hover {
+            background-color: #45a049; /* Verde más oscuro */
+        }
+    </style>
 </head>
 
 <nav class="navbar">
@@ -417,6 +438,13 @@
   </div>
 
  
+  <button class="redirect-button" id="redirectBtn">Regresar al menu!</button>
+
+  <script>
+      document.getElementById('redirectBtn').addEventListener('click', function() {
+          window.location.href = 'menu.html'; // URL de destino
+      });
+  </script>
 
 </body>
 

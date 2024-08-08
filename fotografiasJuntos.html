@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes con Volteo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.flip-card-back {
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h2 {
+    color: yellow;
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+ /* CSS para estilizar el botón */
+ .redirect-button {
+            background-color: #4CAF50; /* Verde */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .redirect-button:hover {
+            background-color: #45a049; /* Verde más oscuro */
+        }
+</style>
+<body style = "background-color:#F5F5DC;">
+
+    <div style = "background-color:#F5F5DC; margin-bottom: 2em;">
+        <a style="text-decoration: none; color:black;" href="#"><strong>PRESIONA LAS IMAGENES MI AMOR!</strong> </a>
+      </div>
+
+    <div class="container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/12.jpeg" alt="Imagen 1">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Mi foto preferida!</h2>
+                    <p>Esta foto es una de las primeras fotos que nos tomamos, es mi foto preferida por todo lo que significa y como me sentia ese dia es inexplicable!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/4.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Tu primera rosa</h2>
+                    <p>Estaba nervioso ese día!. Llevaba tiempo queriendote regalar algo para poder demostrarte lo mucho que me gustabas y comprometido que estaba contido y fue la primera compra que hice cuando cobre mi primer sueldo en carrefour</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/10.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>El Ying y el Yang</h2>
+                    <p>Fotico aesthetik mamita</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/FOTOMERCADONA.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>ME ENCANTA ESTA FOTO!</h2>
+                    <p>Te veías tan hermosa mi amor en ese dia, no sé si recuerdas, pero te recogi en el zoco y nos fuimos caminando hasta mi casita con este color tan tremendo, pero no importaba porque estabamos juntos </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/7a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>MI BICHOTAAAA</h2>
+                    <p>ME ENCANTA ESTA FOTO MI AMOR, EN HONOR A NUESTRO COMANDANTE SIUUUU</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/5a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Este día fue súper chimba!</h2>
+                    <p>Estabamos tomando algo en el planetocio, mi amor te veias tan hermosa, recuerdo que te habias aplanchado el pelo mi reina. Recuerdo que ese dia hablamos de cosas muy profundas y muy bonitas de nosotros</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/6a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Me encantan tus ojitos en esta foto!</h2>
+                    <p>Realmente me encanta todo de ti en esta foto, pero especialmente tus ojitos marroncitos claritos mi amor, que tanto iluminan mi camino</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/3a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Besito en la mejilla!</h2>
+                    <p>ESPAÑA CAMPEON DE LA EUROCOPAAAA! y celebrando junto a ti mi amor, comiendo papitas y tomando alguito con ese calor tan duro que hacia</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/11a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Salchipapa for you!</h2>
+                    <p>Recargando la barriguita de salchipapas, ya que la carcel nos dejo fue sin energias JAJAJAJA</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/14a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>LA INVENTORA DEL MEWING</h2>
+                    <p>Yo pensaba que tenia algo de mandibula hasta que conoci la mejor mandibula del mundo, mi piwawa!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/10a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>LAS DOS REINAS DE MI VIDAA!</h2>
+                    <p>Si estuviera mi mamá en esa foto, estarían las mujeres que conforman mi vida, sin ellas no serían la persona tan equilibrada y feliz que soy!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/12a.jpeg" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Mimiendo feliz</h2>
+                    <p>No sabes cuantas veces he abierto mi movil y he visto esta foto, me encanta como sonries mientras intentas dormir, te reias por alguna tonteria que dije, eso SEGURISIMO!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Fotos/yoko.png" alt="Imagen 2">
+                </div>
+                <div class="flip-card-back">
+                    <h2>Tu eres mi Yoko mi amor!</h2>
+                    <p>No es secreto, tú me tiene' loco
+                        Me siento en LSD cuando te toco
+                        Soy un tonto y mil vece' me equivoco
+                        Te quiero siempre a mi ladito como Yoko!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Puedes añadir más flip-cards aquí -->
+    </div>
+
+
+    <button class="redirect-button" id="redirectBtn">Regresar al menu!</button>
+
+    <script>
+        document.getElementById('redirectBtn').addEventListener('click', function() {
+            window.location.href = 'menu.html'; // URL de destino
+        });
+    </script>
+</body>
+</html>
